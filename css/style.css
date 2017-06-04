@@ -1,0 +1,46 @@
+/*obrót*/
+
+img{
+    transition: all 0.3s
+}
+
+.rotate img{
+    transform: rotate(20deg);
+}
+
+/*przesuniecie*/
+.translate img{
+    transform: translate(200px, 100px)
+}
+
+/*skalowanie*/
+.scale img:hover{
+    transform: scale(1.3)
+}
+
+/*animacja*/
+
+/*nazwa czas jak itp*/
+.animation img{
+    animation-name: resize;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; /*ile razy*/
+    
+}
+.animation2 img{
+    animation-name: resize;
+    animation-duration: 2s;
+    animation-iteration-count: 1; /*ile razy*/
+    
+}
+
+/*definicja animacji - co ma się dziać podczas animacji*/
+@keyframes resize{
+    0% , 100%{
+        height: 300px;
+    }
+    
+    50% {
+        height: 100px;
+    }
+}
